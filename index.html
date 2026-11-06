@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fidel Jones | Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Fidel Jones</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&auto=format&fit=crop&q=80" alt="Fidel Jones Profile Picture" class="profile-pic">
+                <h1>Hello, I'm <span>Fidel Jones</span></h1>
+                <p>A passionate Web Developer & Computer Science Student building clean, user-friendly digital experiences.</p>
+                <a href="#projects" class="btn">View My Work</a>
+            </div>
+        </section>
+
+        <section id="about" class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <h3>Educational Background</h3>
+                <p>I am currently pursuing a Bachelor of Science in Computer Science. My academic journey has grounded me in software engineering fundamentals, algorithms, and web technologies.</p>
+                
+                <h3>Education Summary</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Year</th>
+                            <th>Degree / Certificate</th>
+                            <th>Institution</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2022 - Present</td>
+                            <td>B.Sc. in Computer Science</td>
+                            <td>Tech University</td>
+                        </tr>
+                        <tr>
+                            <td>2020 - 2022</td>
+                            <td>High School Diploma</td>
+                            <td>Central High School</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Personal Interests</h3>
+                <ol>
+                    <li>Open-source software contribution</li>
+                    <li>UI/UX Design and Prototyping</li>
+                    <li>Photography and Digital Art</li>
+                    <li>Tech blogging and community mentoring</li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="skills" class="container">
+            <h2>Technical Skills</h2>
+            <ul class="skills-list">
+                <li><strong class="skill-name">HTML5 & Semantic Markup</strong> <span class="skill-level">Advanced</span></li>
+                <li><strong class="skill-name">CSS3, Flexbox & Grid Layouts</strong> <span class="skill-level">Advanced</span></li>
+                <li><strong class="skill-name">JavaScript (ES6+)</strong> <span class="skill-level">Intermediate</span></li>
+                <li><strong class="skill-name">Git & GitHub Version Control</strong> <span class="skill-level">Intermediate</span></li>
+                <li><strong class="skill-name">Responsive Web Design</strong> <span class="skill-level">Advanced</span></li>
+            </ul>
+        </section>
+        <section id="projects" class="container">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <img src="https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=500&auto=format&fit=crop&q=80" alt="E-commerce Web App Screenshot">
+                    <div class="project-info">
+                        <h3>E-Commerce Web Application</h3>
+                        <p>A responsive online store frontend developed with clean HTML5 and modern CSS Grid layout techniques.</p>
+                        <a href="https://github.com" target="_blank" rel="noopener">View Repository &rarr;</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=500&auto=format&fit=crop&q=80" alt="Task Manager App Screenshot">
+                    <div class="project-info">
+                        <h3>Task Tracker App</h3>
+                        <p>An interactive productivity application to help users manage daily tasks and organize study schedules.</p>
+                        <a href="https://github.com" target="_blank" rel="noopener">View Repository &rarr;</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <img src="https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=500&auto=format&fit=crop&q=80" alt="Weather Dashboard Screenshot">
+                    <div class="project-info">
+                        <h3>Weather Forecast Dashboard</h3>
+                        <p>A clean, mobile-friendly interface designed for displaying real-time weather metrics and forecasts.</p>
+                        <a href="https://github.com" target="_blank" rel="noopener">View Repository &rarr;</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="container">
+            <h2>Contact Me</h2>
+            <p class="contact-intro">Feel free to reach out via email or send a message using the form below!</p>
+            <p><strong>Direct Email:</strong> <a href="mailto:fideljones@example.com">fideljones@example.com</a></p>
+
+            <form class="contact-form" action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Inquiry Subject" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Fidel Jones. All rights reserved.</p>
+        <p><a href="#home">Back to top</a></p>
+    </footer>
+
+</body>
+</html>
